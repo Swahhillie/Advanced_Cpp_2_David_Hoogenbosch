@@ -25,7 +25,7 @@ class Student
         bool operator==(const Student& other)const;
         bool operator!=(const Student& other)const;
 
-
+        static bool is_male(const Student& student){return student.gender_ == kMale;}
     private:
 
         std::string last_name_;
